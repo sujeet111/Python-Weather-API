@@ -27,7 +27,7 @@ def render_results():
 def get_api_key():
     config = configparser.ConfigParser()
     config.read('config.ini')
-    return config['openmap']['api']
+    return config['openweathermap']['api']
 
 
 def get_weather_results(zip_code, api_key):
